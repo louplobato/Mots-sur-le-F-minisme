@@ -10,7 +10,7 @@
     --title-xxl : 1.563rem; 
     --title-xl : 1.25rem;
     --title : 1.063rem;
-    --text: 0.938rem;
+    --text-normal: 0.938rem;
     --text-button: 0.875rem;
     --text-tiny: 0.625rem;
 
@@ -23,7 +23,8 @@
     --dark-green: rgba(4,95,95,100);
     --fond: rgba(255,242,251,100);
     --tonique: rgba(213,180,35,100);
-    --grey: rgba(0,0,0,70);
+    --grey-trans: rgba(0,0,0,0.7);
+    --grey: rgba(47,47,47,1)
 }
 
 

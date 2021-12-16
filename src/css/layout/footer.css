@@ -1,0 +1,36 @@
+.footer {
+    background-color: var(--grey);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px 0 5px;
+}
+
+.footer-div {
+    line-height: center;
+}
+
+.footer-list {
+    justify-content: space-between;
+    display: flex; 
+}
+
+.footer-presentation {
+    bottom: 0;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.footer-link1 {
+    color: white;
+    font-variant: small-caps;
+    margin-left: 65px;
+}
+
+.footer-link2 {
+    color: white;
+    font-variant: small-caps;
+    margin-right: 65px;
+}

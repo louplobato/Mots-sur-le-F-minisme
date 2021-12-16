@@ -1,0 +1,39 @@
+main {
+    background-color: var(--fond);
+}
+
+h1 {
+    font-family: var(--heading);
+    font-size: var(--title-xxl);
+}
+
+h2 {
+    font-family: var(--heading);
+    font-size: var(--title-xl);
+}
+
+h3 {
+    font-family: var(--heading);
+    font-size: var(--title);
+}
+
+.text {
+    font-family: var(--text);
+}
+
+a {
+    text-decoration: none; 
+}
+
+.littletext {
+    font-family: var(--text);
+    font-size: var(--text-tiny);
+}
+
+p {
+    font-family: var(--text);
+}
+
+.text-button {
+    font-family: var(--button);
+}
