@@ -6,11 +6,21 @@
     text-align: center;
     min-height: 630px;
     color: white;
+    border-bottom-style: solid;
+    border-width: 3px;
+    border-color: var(--tonique);
+    padding-left: 6.13%; 
+    padding-right: 6.13%;
+}
+
+.header-page-div-1 {
+    line-height: 6px;
+    margin-bottom: 126px;
+    margin-top: 49px;
 }
 
 .header-page-title {
     font-size: var(--title-xxl);
-    margin-top: 30px;
 }
 
 .header-page-sub {
@@ -18,8 +28,19 @@
     font-size: var(--title-xl);
 }
 
+.header-page-div-2 {
+    line-height: 6px;
+    margin-bottom: 98px;
+}
+
 .header-page-term {
     font-family: var(--heading);
     font-size: var(--title-xl);
 
+}
+
+.header-page-presentation {
+    font-family: var(--heading);
+    font-size: var(--title-xl);
+    line-height: 26px;
 }
