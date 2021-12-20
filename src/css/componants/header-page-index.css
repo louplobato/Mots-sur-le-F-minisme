@@ -1,0 +1,25 @@
+.header-page {
+    background-color: var(--primary);
+    margin-top: 48px;
+    display: flex;
+    line-height: center;
+    text-align: center;
+    min-height: 630px;
+    color: white;
+}
+
+.header-page-title {
+    font-size: var(--title-xxl);
+    margin-top: 30px;
+}
+
+.header-page-sub {
+    font-family: var(--heading);
+    font-size: var(--title-xl);
+}
+
+.header-page-term {
+    font-family: var(--heading);
+    font-size: var(--title-xl);
+
+}
