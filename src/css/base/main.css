@@ -42,3 +42,8 @@ p {
     font-family: var(--button);
 }
 
+.main-index {
+    
+    margin-top: -16px;
+}
+

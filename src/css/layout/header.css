@@ -1,5 +1,6 @@
 .header {
     background-color: var(--dark-green);
+    z-index: 4;
     position: fixed;
     display: flex;
     left: 0;

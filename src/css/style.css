@@ -23,5 +23,8 @@
 
 /*Componants*/
 
-@import "componants/header-page-index.css"
+@import "componants/header-page-index.css";
+@import "componants/tweets.css";
+@import "componants/icone-fleche.css";
+@import "componants/button-read.css";
 
