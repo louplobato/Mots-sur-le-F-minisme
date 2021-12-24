@@ -27,6 +27,8 @@
     text-align: center;
     background-color: var(--grey-trans);
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .tweet-article-text {
@@ -48,4 +50,3 @@
     margin-top: -69px;
     margin-right: 3px;
 }
-

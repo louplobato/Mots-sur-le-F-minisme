@@ -1,10 +1,11 @@
 .read-button {
     background-color: var(--tonique);
     font-family: var(--button);
-    font-variant: small-caps;
     color: black;
     width: 90px;
-    height: 35px;
     text-align: center;
-    padding-top: 15px;
-}
+    padding: 11px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-size: 12px;
+}   

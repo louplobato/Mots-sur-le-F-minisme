@@ -1,3 +1,7 @@
+body{
+    background-color: var(--fond);
+}
+
 main {
     background-color: var(--fond);
 }
