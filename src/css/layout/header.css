@@ -12,12 +12,11 @@
     border-color: var(--tonique);
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .header--menu {
     appearance: none;
-    -webkit-appearance: none;
+    -webkit-appearance: none;   
     border: none;
     padding: none;
     background-color: transparent;
@@ -25,11 +24,6 @@
     margin-right: 30px;
 }
 
-.header--nav {
-    visibility: hidden;
-    display: block;
-    position: fixed;
-}
 
 .header--logo {
     margin-left: 30px;
