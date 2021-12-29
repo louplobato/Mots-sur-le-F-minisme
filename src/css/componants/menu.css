@@ -1,17 +1,44 @@
 .header--nav {
     visibility: hidden;
     opacity: 0;
-    display: flex;
     position: fixed;
     overflow: hidden;
     right: 0;
     top: 0;
     bottom: 0;
+    left: 0;
     background-color: var(--grey-trans);
     transition: all .4s ease-in-out;
+    font-family: var(--button);
+    line-height: 1.5;
 }
 
 .menu--open {
     visibility: visible;
     opacity: 1;
+}
+
+.header--link {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    padding-right: 10px;
+}
+
+.header--lang {
+    display: flex;
+    justify-content: center;
+    margin-top: 53px;
+    margin-bottom: 80px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.menu--div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }

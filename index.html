@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
-<body class="body" x-data="{ atTop:}">
+<body class="body">
     <header class="header">
         <a href="/index.html" class="header--logo">
             <img src="public/icones/logo1.svg" alt="logo du site Mots sur le Féminisme">
@@ -16,21 +16,21 @@
 
         <button class="header--menu menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                 @pointerdown="menuIsOpen = !menuIsOpen"
-                :class="menuIsOpen && 'menu-btn--open">
+                :class="menuIsOpen && 'menu-btn--open'">
             <img src="public/icones/Call_to_action_hamburger.svg" alt="Bouton de Navigation">
         </button>
 
         <nav class="header--nav menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
-            <ul class="header--list">
-                <li class="header--item"><a href="index-eng.html" class="header--link"><strong>FR</strong>/ENG</a></li>
-                <li class="header--item"><a href="Article-1.html" class="header--link">Une Histoire du Féminisme</a></li>
-                <li class="header--item"><a href="Article-2.html" class="header--link">Passée et moderne, deux figures du Féminisme Chinois</a></li>
-                <li class="header--item"><a href="Article-3.html" class="header--link">Feminist in progress, comment appréhender le Féminisme</a></li>
-                <li class="header--item"><a href="Video.html" class="header--link">Vidéo</a></li>
-                <li class="header--item"><a href="Glossaire.html" class="header--link">Glossaire</a></li>
-                <li class="header--item"><a href="Autres-Projets.html" class="header--link">Autres Projets</a></li>
+            <a href="index-eng.html" class="header--lang"><strong>FR</strong>/ENG</a>
+            <div class="menu--div">
+                <a href="Article-1.html" class="header--link">Une Histoire du Féminisme</a></li>
+                <a href="Article-2.html" class="header--link">Passée et moderne, deux figures du Féminisme Chinois</a>
+                <a href="Article-3.html" class="header--link">Feminist in progress, comment appréhender le Féminisme</a>
+                <a href="Video.html" class="header--link header--link-2">Vidéo</a>
+                <a href="Glossaire.html" class="header--link">Glossaire</a>
+                <a href="Autres-Projets.html" class="header--link">Autres Projets</a>
+            </div>
     
-            </ul>
         </nav>
     </header> 
     
