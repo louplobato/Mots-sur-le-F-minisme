@@ -1,0 +1,18 @@
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.article-title-image {
+    margin-top: 51px;
+}
+
+.article-figure {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,6 +1,7 @@
 /*Base*/
 
 @import "base/main.css";
+@import "base/media.css";
 
 /*Fonts*/
 
@@ -27,5 +28,6 @@
 @import "componants/tweets.css";
 @import "componants/icone-fleche.css";
 @import "componants/button-read.css"; 
-@import "componants/menu.css"
+@import "componants/menu.css";
+@import "componants/frise.css"
 

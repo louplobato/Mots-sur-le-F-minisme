@@ -1,6 +1,7 @@
 body{
     background-color: var(--fond);
-    
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -9,7 +10,7 @@ main {
 
 h1 {
     font-family: var(--heading);
-    font-size: var(--title-xxl);
+    
     font-weight: normal;
 }
 
@@ -60,5 +61,35 @@ ul {
     list-style-type: none;
     }
 
+.article-title {
+    position: absolute;
+    text-align: center;
+    margin-top: -66px;
+    width: 280px;
+    height: 120px;
+    color: white;
+    background-color: var(--grey-trans);
+    display: flex;
+    align-items: center;
+    margin-left: 12%;
+    font-size: var(--title-xxl);
+}
 
+.article-intro {
+    margin-top: 80px;
+}
 
+.article-text {
+    margin-left: 20px;
+    width: 335px;
+}
+
+.article-heading {
+    margin-left: 10px;
+    width: 355px;
+}
+
+.article-link {
+    color: black;
+    text-decoration: underline;
+}

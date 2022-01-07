@@ -1,153 +1,149 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mots sur le Féminisme</title>
+    <title>Mots sur le Féminisme - Féminisme Chinois</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
-<body>
+<body class="body">
     <header class="header">
         <a href="/index.html" class="header--logo">
             <img src="public/icones/logo1.svg" alt="logo du site Mots sur le Féminisme">
         </a>
 
-        <button class="header--menu">
+        <button class="header--menu menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
             <img src="public/icones/Call_to_action_hamburger.svg" alt="Bouton de Navigation">
         </button>
 
-        <nav class="header--nav">
-            <ul class="header--list">
-                <li class="header--item"><a href="index-eng.html" class="header--link"><strong>FR</strong>/ENG</a></li>
+        <nav class="header--nav menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <a href="index-eng.html" class="header--lang"><strong>FR</strong>/ENG</a>
+            <div class="menu--div">
+                <a href="Article-1.html" class="header--link">Une Histoire du Féminisme</a></li>
+                <a href="Article-2.html" class="header--link">Passée et moderne, deux figures du Féminisme Chinois</a>
+                <a href="Article-3.html" class="header--link">Feminist in progress, comment appréhender le Féminisme</a>
+                <a href="Video.html" class="header--link header--link-2">Vidéo</a>
+                <a href="Glossaire.html" class="header--link">Glossaire</a>
+                <a href="Autres-Projets.html" class="header--link">Autres Projets</a>
+            </div>
     
-                <li class="header--item"><a href="Article-1.html" class="header--link">Une Histoire du Féminisme</a></li>
-    
-                <li class="header--item"><a href="Article-2.html" class="header--link">Passée et moderne, deux figures 
-                    du Féminisme Chinois</a></li>
-    
-                <li class="header--item"><a href="Article-3.html" class="header--link">Feminist in progress, comment appréhender le Féminisme</a></li>
-    
-                <li class="header--item"><a href="Video.html" class="header--link">Vidéo</a></li>
-    
-                <li class="header--item"><a href="Glossaire.html" class="header--link">Glossaire</a></li>
-    
-                <li class="header--item"><a href="Autres-Projets.html" class="header--link">Autres Projets</a></li>
-    
-            </ul>
         </nav>
-    </header>
+    </header> 
     
     <main>
         <figure>
-            <img src="public/img/Image_Article_2_grande.webp" alt="Photo de Wei TingTing et Qiu Jin">
+            <img src="public/img/Image_Article_2_grande.webp" alt="Photo de Wei TingTing et Qiu Jin" class="article-title-image">
         </figure>
 
-        <h1>
+        <h1 class="article-title">
             Passée et Moderne, deux figures du Féminisme Chinois
         </h1>
 
-        <p>
+        <p class="article-intro article-text">
             La Chine est un pays avec une histoire gigantesque mais souvent occulté par celle des occidentaux. Ils ont été des pionniers dans beaucoup de domaines à travers les époques. 
             A travers son histoire on retrouve des femmes fortes qui incarne l’image de la femme que le féminisme défend. Mais certaines femmes luttent toujours pour la cause féministe en 
             Chine. Etudions ensemble le parallèle entre deux chinoise qui ont su se démarquer par leurs adhésion au mouvement féministe.
         </p>
 
-        <figure>
+        <figure class="article-figure">
             <img src="public/img/image_texte_article2_1.webp" alt="Photo d’une manifestation féministe en Chine">
             <figcaption class="littletext">
                 Photo d’une manifestation féministe en Chine
             </figcaption>
         </figure>
 
-        <h2>
+        <h2 class="article-heading">
             Qiu Jin, pionnière du Féminisme en extrême Orient
         </h2>
 
-        <p>
+        <p class="article-text">
             Commençons par parler de Qiu Jin. C’est une poétesse et une féministe chinoise qui est née le 8 novembre 1875 à Xiamen en Chine. Elle suit au début de sa vie un chemin “classique” 
             pour une femme à l’époque, elle vit un mariage forcé et a des enfants. Mais à 28 ans seulement elle quitte sa vie “classique” pour aller s’instruire au Japon. Elle part persuadée 
             que les femmes peuvent prendre leur indépendance et cela en passant par le savoir.
         </p>
 
-        <p>
+        <p class="article-text">
             Arrivée au Japon elle va être influencée par le mouvement révolutionnaire des “Boxers”. Elle va alors réellement développer une conscience féministe. Elle va alors adhérer à des 
             mouvements révolutionnaires. Ces derniers ont été fortement réprimés par le Japon à cette époque et les étudiants chinois l’ont été aussi. Tout cela à forcer Qui Jin à quitté le 
             Japon.
         </p>
 
-        <figure>
+        <figure class="article-figure">
             <img src="public/img/image_texte_article2_2.webp" alt="Représentation de Qui Jin">
             <figcaption class="littletext">Représentation de Qui Jin</figcaption>
         </figure>
 
-        <p>
+        <p class="article-text">
             Revenue en Chine, elle va commencer à enseigner dans une école pour fille. Ensuit elle va fondé une société illégale de magazine en faveur de la libération de la femme. De plus 
             elle va se faire appeler “ennemie des hommes” s’habillera comme eux et ira même jusqu’à apprendre le maniement du sabre. 
         </p>
 
-        <p>
+        <p class="article-text">
             Qiu Jin ne s’est pas arrêté au féminisme car elle avait compris que pour émanciper les femmes il fallait changer la politique entière de la Chine. Elle aura donc comme plan un coup d'État 
             qui aura pour but de faire tomber la dynastie des Qing et d’instaurer une république de Chine.
         </p>
 
-        <p>
+        <p class="article-text">
             Malheureusement, Qiu Jin sera arrêté avant d’avoir pu lancer le coup d'État. Venu le moment du jugement, les preuves qui l’ont fait tomber étaient ses poèmes. Elle a été condamnée 
             à mort puis décapitée.
         </p>
 
-        <p>
+        <p class="article-text">
             Qiu Jin n’est pas connu en Occident mais par ses actions elle s’est élevé au rang d'héroïne nationale en Chine.
         </p>
 
-        <figure>
+        <figure class="article-figure">
             <img src="public/img/image_texte_article2_3.webp" alt="Photo de la Statue de Qiu Jin">
             <figcaption class="littletext">Photo de la Statue de Qiu Jin</figcaption>
         </figure>
 
-        <h2>
+        <h2 class="article-heading">
             Wei Tingting, la nouvelle vague de féminisme chinois
         </h2>
 
-        <p>
+        <p class="article-text">
             Maintenant que nous avons vu une personnalité passée du féminisme chinois intéressons nous à une personne plus jeune qui incarne la relève du féminisme en Chine. Parlons alors de 
             Wei Tingting. 
         </p>
 
-        <p>
+        <p class="article-text">
             Wei Tingting est une réalisatrice, activiste et auteure féministe et LGBTQ+. Elle est née en 1989 à Hechi en Chine. Elle est diplômée plusieurs fois par l’université de Wuhan, en 
-            sociologie et en <a href="Glossaire.html"><strong>anthropologie</strong></a>. Pendant ses études elle adhère à l’activisme féministe et LGBT. Elle a intégré des organisations en conséquence comme les Wuhan Rainbow. 
+            sociologie et en <a href="Glossaire.html" class="article-link"><strong>anthropologie</strong></a>. Pendant ses études elle adhère à l’activisme féministe et LGBT. Elle a intégré des organisations en conséquence comme les Wuhan Rainbow. 
         </p>
 
-        <p>
+        <p class="article-text">
             Pendant les années qui suivent elle va s’engager vraiment dans l’activisme et dans la lutte pour les droits des femmes et des personnes LGBTQ+. Elle va alors intégrer des 
             organisations et des projets. On pourrait citer la “Lala Alliance”, une organisation qui lutte pour les droits des lesbiennes.
         </p>
 
-        <figure>
+        <figure class="article-figure">
             <img src="public/img/image_texte_article2_4.webp" alt="Photo de Wei Tingting en conférence">
             <figcaption class="littletext">Photo de Wei Tingting en conférence</figcaption>
         </figure>
 
-        <p>
+        <p class="article-text">
             Wei Tingting à aussi travaillé au sein du Beijing Gender Health Education Institute ou l'Institut d’Education sur le Genre et la Santé de Pékin. Cet institut à pour but d’informer 
             les chinois sur la santé par rapport au sex mais aussi sur les genres qui existe et qui devrait être plus reconnus. Wei Tingting devait aider pour l’organisation d’une marche 
             annuelle pour le SIDA.
         </p>
 
-        <p>
+        <p class="article-text"> 
             Le fait est que Wei Tingting est surtout connu pour ses actions au sein d’un groupe d'activistes, les “Feminist Five”. Ce groupe est composé de 5 féministe, Li Maizi, Zeng Churan, 
             Wu Rongrong, Wang Man et Wei Tingting. Juste avant la Journée Internationale de la Femme le gouvernement chinois à fait emprisonner ces 5 femmes pendant plus de 35 jours. Cet 
             emprisonnement à été justifié  par le fait que ces 5 féministes avaient organisé une campagne de sensibilisation sur la maltraitance des femmes dans les transports en commun. 
             Apparemment elle aurait été incarcérée pour dérangement. 
         </p>
 
-        <figure>
+        <figure class="article-figure">
             <img src="public/img/image_texte_article2_5.webp" alt="Manifestantes en faveur de la libération des Feminist Five">
             <figcaption class="littletext">Manifestantes en faveur de la libération des Feminist Five</figcaption>
         </figure>
 
-        <p>
+        <p class="article-text"> 
             La Chine à une histoire très riche et le féminisme en fait partie. Nous l’avons vu en parlant de ces deux femmes inspirantes. Mais aujourd’hui au delà de prôné le bon sens en 
             luttant pour des droits fondamentaux de la femme et des personnes LGBTQ+, la lutte féministe en Chine soulève une réel problématique politique. La Chine est une dictature qui 
             filtre les paroles et les informations. Et si un acte purement féministe est passable de prison, nous pouvons y voir une atteinte direct à la liberté d’expression. Le Féminisme 

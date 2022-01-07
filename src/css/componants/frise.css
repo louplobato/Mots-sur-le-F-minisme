@@ -1,0 +1,28 @@
+.frise {
+    background-color: var(--primary);
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: var(--tonique);
+    align-items: center;
+
+}
+
+.frise-item {
+    flex: 1 0 140px;
+    text-align: center;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+
+}
+
+.frise-fleche {
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 327px;
+    opacity: 70%;
+}
