@@ -97,3 +97,24 @@ ul {
     color: black;
     text-decoration: underline;
 }
+
+.definition {
+    margin-left: 20px;
+}
+
+.terme {
+    margin-left: 10px;
+}
+
+.pages-intro {
+    margin-left: 5px;
+}
+
+.about-title {
+    margin-left: 10px;
+}
+
+.about-text {
+    margin-left: 20px;
+    width: 335px;
+}
