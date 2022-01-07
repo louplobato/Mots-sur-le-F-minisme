@@ -1,3 +1,4 @@
+/*Tweet Article Home Page*/
 .tweet-article-1 {
     margin-top: 200px;
     margin-bottom: 40px;
@@ -49,4 +50,30 @@
     right: 0;
     margin-top: -69px;
     margin-right: 3px;
+}
+
+/*Tweet article petit*/
+
+.tweet-little {
+    background-color: var(--grey-trans);
+    color: white;
+    width: 335px;
+    height: 100px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.tweet-little-title {
+    width: 215px;
+    font-family: var(--heading);
+    text-align: center;
+    padding: 10px;
+}
+
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
 }

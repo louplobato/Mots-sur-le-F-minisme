@@ -16,3 +16,7 @@ figure {
 img {
     max-width: 100%;
 }
+
+video {
+    width: 375px;
+}
