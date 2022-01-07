@@ -44,3 +44,23 @@
     font-size: var(--title-xl);
     line-height: 26px;
 }
+
+.pages-header {
+    background-color: var(--primary);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    margin-top: 48px;
+    border-bottom: 3px solid var(--tonique);
+    
+}
+
+.pages-header-title {
+    color: white;
+    font-family: var(--heading);
+    font-size: var(--title-xxl);
+    text-align: center;
+}
