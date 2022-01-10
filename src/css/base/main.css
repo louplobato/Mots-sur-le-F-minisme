@@ -77,20 +77,7 @@ ul {
     align-items: center;
     margin-left: 12%;
     font-size: var(--title-xxl);
-}
-
-.article-title-eng {
-    position: absolute;
-    text-align: center;
-    margin-top: -66px;
-    width: 280px;
-    height: 120px;
-    color: white;
-    background-color: var(--grey-trans);
-    display: flex;
-    align-items: center;
-    margin-left: 12%;
-    font-size: var(--title-xxl);
+    justify-content: center;
 }
 
 .article-intro {
