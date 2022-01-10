@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="eng" x-data="{ menuIsOpen: false }" :class="menuIsOpen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mots sur le Féminisme</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <a href="/index.html" class="header--logo">
+            <img src="public/icones/logo1.svg" alt="logo du site Mots sur le Féminisme">
+        </a>
+
+        <button class="header--menu menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+            <img src="public/icones/Call_to_action_hamburger.svg" alt="Bouton de Navigation">
+        </button>
+
+        <nav class="header--nav menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <a href="index.html" class="header--lang">FR/<strong>ENG</strong></a>
+            <div class="menu--div">
+                <a href="Article-1-eng.html" class="header--link">A History of Feminism</a></li>
+                <a href="Article-2-eng.html" class="header--link">Past and Modern, two figures of Chinese Feminism </a>
+                <a href="Article-3-eng.html" class="header--link">Feminist In Progress, how to apprehend Feminism</a>
+                <a href="Video-eng.html" class="header--link header--link-2">Video</a>
+                <a href="Glossaire-eng.html" class="header--link">Glossary</a>
+                <a href="Autres-Projets-eng.html" class="header--link">Other Projects</a>
+            </div>
+    
+        </nav>
+    </header> 
+    
+    <div class="header-page">
+        <article>
+            <div class="header-page-div-1">
+                <h1 class="header-page-title">Mots sur le Féminisme</h1>
+                <p class="header-page-sub">Apprehend the movement</p>
+            </div>
+            
+            <div class="header-page-div-2">
+                <p class="header-page-term">Feminism<p>
+                <p class="header-page-def">Feminism is fighting for gender equality</p>
+            </div>
+
+            <div class="header-page-div-3">
+                <p class="header-page-presentation">“Mots sur le Féminisme” is a site that will give you the keys to learn about feminism or provide you with knowledge that will help you better know the movement. Immerse yourself in the articles of the site which will bring you information that will be useful to join the movement” </p>
+            </div>
+            
+        </article>
+    </div>
+
+    <main class="main-index">
+
+        <img src="public/icones/flèche.svg" alt="icone de flèche" class="icone-fleche-index">
+
+        <article class="tweet-article-1">
+            <figure class="tweet-article-figure">
+                <img src="public/img/Image_article1.jpg" alt="photo de main avec le hashtag meetoo dessus">
+            </figure>
+            <p class="tweet-article-text">Between development, progress, personalities and fight. Feminism has a great and rich history, this article will introduce you to it.</p>
+            <h2 class="tweet-article-title">A History of Feminism</h2>
+            <a href="Article-1.html" class="read-button tweet-article-button">
+                Read the article
+            </a>
+        </article>
+            
+        <article class="tweet-article-2">
+            <figure class="tweet-article-figure">
+                <img src="public/img/Image_article2.jpg" alt="Photo de Wei Tingting et Qui Jin">
+            </figure>
+            <p class="tweet-article-text">Two eras but the same goal, freedom. Meet Qiu Jin and Wei Tingting, two great figures of Chinese feminism, each in their own time</p>
+            <div class="tweet-article-div">
+                <h2 class="tweet-article-title">Past and Modern, two figures of Chinese Feminism</h2>
+            </div>
+            <a href="Article-2.html" class="read-button tweet-article-button">
+                Read the article
+            </a>
+        </article>
+        
+        <article class="tweet-article-2">
+            <figure class="tweet-article-figure">
+                <img src="public/img/Image_article3.jpg" alt="Photo du livre feminist in progress de Lauraine Meyer">
+            </figure>
+            <p class="tweet-article-text">Do you know this book by Lauraine Meyer? Feminist in Progress is a key to better understand feminism. Discover or rediscover this book</p>
+            <h2 class="tweet-article-title">Feminist in progress, how to apprehend Feminism</h2>
+            <a href="Article-3.html" class="read-button tweet-article-button">
+                Read The article
+            </a>
+        </article>
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-div">
+            <div class="footer-list">
+                <a href="a-propos.html" class="footer-link1 text-button">about</a>
+    
+                <a href="contact.html" class="footer-link2 text-button">contact</a>
+            </div>
+    
+            <p class="littletext footer-presentation"> Project realized in the pedagogical context of the <br> MMI department in Montbéliard  <br> Loup LOBATO</p>
+        </div>
+    </footer>
+</body>
+
+</html>
