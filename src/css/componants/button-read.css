@@ -25,3 +25,16 @@
     height: 50px;
     margin: 235px;
 }
+
+.error-button {
+    background-color: var(--tonique);
+    color: white;
+    appearance: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-left: 127px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: var(--text);
+}

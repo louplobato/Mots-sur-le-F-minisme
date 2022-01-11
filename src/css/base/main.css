@@ -119,3 +119,44 @@ ul {
     margin-left: 20px;
     width: 335px;
 }
+
+.error-text {
+    text-align: center;
+    margin-top: 83px;
+}
+
+.error-error {
+    text-align: center;
+    font-size: var(--title-xl);
+    font-weight: bold;
+}
+
+.error-link {
+    color: black;
+    font-family: var(--text);
+    font-size: var(--title-xl);
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.error-bar {
+    border: 1px solid black;
+    width: 320px;
+    margin-bottom: 30px;
+}
+
+.error-name {
+    font-family: var(--text);
+    font-size: var(--basic);
+    margin-left: 15px;
+}
+
+.error-name-eng {
+    font-family: var(--text);
+    font-size: var(--basic);
+    margin-left:77px;
+}

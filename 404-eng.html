@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="eng" x-data="{ menuIsOpen: false }" :class="menuIsOpen">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mots sur le Féminisme</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <a href="/index-eng.html" class="header--logo">
+            <img src="public/icones/logo1.svg" alt="logo du site Mots sur le Féminisme">
+        </a>
+
+        <button class="header--menu menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen"
+                :class="menuIsOpen && 'menu-btn--open'">
+            <img src="public/icones/Call_to_action_hamburger.svg" alt="Bouton de Navigation">
+        </button>
+
+        <nav class="header--nav menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <a href="404.html" class="header--lang">FR/<strong>ENG</strong></a>
+            <div class="menu--div">
+                <a href="Article-1-eng.html" class="header--link">A History of Feminism</a></li>
+                <a href="Article-2-eng.html" class="header--link">Past and Modern, two figures of Chinese Feminism </a>
+                <a href="Article-3-eng.html" class="header--link">Feminist In Progress, how to apprehend Feminism</a>
+                <a href="Video-eng.html" class="header--link header--link-2">Video</a>
+                <a href="Glossaire-eng.html" class="header--link">Glossary</a>
+                <a href="Autres-Projets-eng.html" class="header--link">Other Projects</a>
+            </div>
+    
+        </nav>
+    </header>
+<main>
+    <p class="error-text">
+        This page is not avaliable 
+    </p>
+
+    <p class="error-error">
+        Error 404
+    </p>
+
+    <div class="error-recherche">
+        <form action="https://google.com/" method="GET" 
+x-data="{ q:'', }" 
+x-on:submit="q = q + ' site: motssurlefeminisme.louplobato.fr'">
+<label for="q" class="error-name-eng">search:</label>
+<input type="text" id="q" name="q" x-model="q" >
+<button type="submit" class="error-button">Rechercher</button>
+</form>
+    </div>
+    
+    <hr class="error-bar">
+
+    <a href="/index-eng.html" class="error-link">
+        Home page
+    </a>
+
+    <a href="Article-1-eng.html" class="error-link">
+        A History of Feminism
+    </a>
+
+    <a href="Article-2-eng.html" class="error-link">
+        Past and Modern, two figures of Chinese Feminism
+    </a>
+
+    <a href="Article-3-eng.html" class="error-link">
+        Feminist In Progress, how to apprehend Feminism
+    </a>
+
+    <a href="Autres-Projets-eng.html" class="error-link">
+        Other Projets
+    </a>
+
+    <a href="a-propos-eng.html" class="error-link">
+        About
+    </a>
+
+    <a href="contact-eng.html" class="error-link">
+        Contact
+    </a>
+
+    <a href="Video-eng.html" class="error-link">
+        Video
+    </a>
+</main>
+<footer class="footer">
+    <div class="footer-div">
+        <div class="footer-list">
+            <a href="a-propos-eng.html" class="footer-link1 text-button">about</a>
+
+            <a href="contact-eng.html" class="footer-link2 text-button">contact</a>
+        </div>
+
+        <p class="littletext footer-presentation"> Project realized in the pedagogical context of the <br> MMI department in Montbéliard  <br> Loup LOBATO</p>
+    </div>
+</footer>
+</body>
+
+</html>
